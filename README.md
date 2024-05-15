@@ -55,7 +55,7 @@ Instalamos Plex Media Server
 ```
 sudo apt install plexmediaserver
 ```
-Ahora vamos a modificar el usuario de plex con el mismo usuario que usamos cuando creamos la iamgen de Raspbian
+Ahora vamos a modificar el usuario de plex con el mismo usuario que usamos cuando creamos la imagen de Raspbian
 ```
 sudo nano /usr/lib/plexmediaserver/lib/plexmediaserver.default
 ```
@@ -67,11 +67,15 @@ Reiniciamos el servicio Plex
 ```
 sudo systemctl restart plexmediaserver
 ```
-Ahora desde un navegador conectado a nuestra red nos vamos al apartado red y 
+Obtenemos la ip de nuestra Raspberry
+```
+hostname -I
+```
+Ahora desde un navegador conectado a nuestra red ingresamos en esa IP. Ingresamos nuestras credenciales y nos vamos al apartado Network/Interfaces para dejar la IP de forma estática.
 
 [IMAGEN]
 
-Fijamos la IP de Plex
+Fijamos la IP en Plex
 ```
 sudo nano /boot/cmdline.txt
 ```
