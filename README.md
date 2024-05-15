@@ -79,7 +79,11 @@ Fijamos la IP en Plex
 ```
 sudo nano /boot/cmdline.txt
 ```
-y añadimos ip="la ip fija que seteamos en el paso anterior" y reiniciamos el sistema
+y añadimos ip="la ip fija que seteamos en el paso anterior" 
+
+[IMAGEN]
+
+Reiniciamos el sistema
 ```
 sudo reboot
 ```
