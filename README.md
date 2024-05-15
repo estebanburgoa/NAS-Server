@@ -11,7 +11,7 @@ Para este proyecto usé una Raspberry Pi 2, ya que con la versión 1 no funciona
 - (Opcional) Teclado con trackpad.
 
 ## OpenMediaVault
-Partimos creando una imagen de Raspbian con la aplicacion Imager en una tarjeta SD. 
+Partimos creando una imagen de Raspbian con la aplicacion [Imager](https://www.raspberrypi.com/software/) en una tarjeta SD. 
 
 Debemos seleccionar nuestro modelo de placa. Para el sistema yo elegí una version de 32bits y sin escritorio. y luego la SD.
 
