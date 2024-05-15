@@ -36,6 +36,49 @@ Una vez que termite todo el proceso volvemos ingresar con nuestras credenciales 
 
 ## Plex Media Server
 
+Instalamos el paquete apt-transport-https
+```
+sudo apt install apt-transport-https
+```
+Para habilitar el repositorio de Plex Media Server solo se requiere ejecutar los siguientes dos comandos:
+```
+echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+```
+```
+curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -
+```
+Actualizamos los paquetes
+```
+sudo apt update
+```
+Instalamos Plex Media Server 
+```
+sudo apt install plexmediaserver
+```
+Ahora vamos a modificar el usuario de plex con el mismo usuario que usamos cuando creamos la iamgen de Raspbian
+```
+sudo nano /usr/lib/plexmediaserver/lib/plexmediaserver.default
+```
+Descomentamos la linea y sustituimos "plex" por "admin"
+
+[IMAGEN]
+
+Reiniciamos el servicio Plex
+```
+sudo systemctl restart plexmediaserver
+```
+Ahora desde un navegador conectado a nuestra red nos vamos al apartado red y 
+
+[IMAGEN]
+
+Fijamos la IP de Plex
+```
+sudo nano /boot/cmdline.txt
+```
+y añadimos ip="la ip fija que seteamos en el paso anterior" y reiniciamos el sistema
+```
+sudo reboot
+```
 
 
 
