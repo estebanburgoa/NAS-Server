@@ -1,4 +1,4 @@
-# NAS-Server y Plex en Raspberry Pi
+# OpenMediaVault y Plex Media Server en Raspberry Pi
 El sueño de muchos es tener un servidor NAS en casa pero la verdad es que cuestan mucho dinero y una posible solución mas económica es armar tu propio servidor NAS y que mejor que complementarlo con Plex que por si no lo sabes, Plex es un servidor multimedia.
 Para este proyecto use una Raspberry Pi 2, ya que con la versión 1 no funciona, pero incluso trasteando logre hacerlo funcionar en una Raspberry Pi Zero 2 W.
 
@@ -10,7 +10,7 @@ Para este proyecto use una Raspberry Pi 2, ya que con la versión 1 no funciona,
 - (Opcional) Cable HDMI
 - (Opcional) Teclado con trackpad.
 
-## NAS Server
+## OpenMediaVault
 Partimos creando una imagen de Raspbian con la aplicacion Imager en una tarjeta SD. 
 
 Debemos seleccionar nuestro modelo de placa. Para el sistema yo elegí una version de 32bits y sin escritorio. y luego la SD.
@@ -32,7 +32,7 @@ sudo wget -O - https://raw.githubusercontent.com/OpenMediaVault-Plugin-Developer
 ```
 Este proceso demorará un poco y hasta reiniciara el sistema, así que ten paciencia.
 
-Una vez que termite todo el proceso volvemos ingresar con nuestras credenciales y para aprovechar de continuar con la instalacion de PlexServer.
+Una vez que termite todo el proceso volvemos ingresar con nuestras credenciales y para aprovechar de continuar con la instalacion de Plex Media Server.
 
 ## Plex Media Server
 
